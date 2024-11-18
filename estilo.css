@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kdam+Thmor+Pro&family=Kode+Mono:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kdam+Thmor+Pro&family=Kode+Mono:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root{
+    --text-color: black;
+    --cor-de-fundo: #f4f3f3;
+    --icone-color: #1a9e7a;
+}
+
+.dark-mode{
+    --text-color: #fff;
+    --cor-de-fundo: #10181f;
+    --cor-de-fundo2: #182029;
+    --icone-color: #f43c64;
+    --color-moon: #f31c4a;
+}
+
+body{
+    background-color:var(--cor-de-fundo);
+}
+header{
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    background-color: #10181f;
+    color: #fff;
+    padding: 10px 10px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.cor-lua{
+    color: var(--color-moon);
+    cursor: pointer;
+}
+#lua button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.logo{
+    width: 50%;
+    font-family: "Kode Mono", monospace;
+    font-size: 1.4rem;
+}
+.logo span{
+    color: #c94c4c;
+}
+nav{
+    width: 50%;
+    display: flex;
+    gap: 15px;
+
+}
+nav i{
+    font-size: 1.7rem;
+}
+
+
+.banner-principal{
+    width: 100%;
+    height: 250px;
+    background-image: url('./assets/banner-title.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.modal{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.4 );
+}
+.banner-content{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    color: #fff;
+    top: 70px;
+    text-align: center;
+}
+.banner-title{
+    width: 100%;
+    height: 75%;
+    font-family: "Roboto Slab", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.banner-title h1{
+    font-size: 1.7rem;
+}
+.banner-title p{
+    font-size: 0.75rem;
+    font-weight: 300;
+    width: 80%;
+}
+
+.banner-title i{
+    font-size: 1.6rem;
+}
+.banner-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner-button button{
+   width: 140px;
+   height: 30px;
+   padding: 4px 25px;
+   border-radius: 15px;
+   font-size: 0.85rem; 
+   font-weight: 500;
+   color: #fff; 
+   background-color: #f31c4a;
+   border: none;
+   position: absolute;
+   bottom: 50px;
+   cursor: pointer;
+   transition: .5s;
+}
+.banner-button button:hover{
+    background-color: transparent;
+    border: 0.5px solid #fff;
+    padding: 0;
+}
+.section-info{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 60px;
+    padding: 0 20px;
+    color: var(--text-color);
+    
+}
+.info{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    height: 110%;
+    background-color: var(--cor-de-fundo2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.3);
+}
+.content{
+    display: flex;
+    width: 100%;
+    padding: 5px;    
+}
+.info-part-1{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 35px;
+}
+
+
+.info-part-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 10px;
+  
+}
+.info-part-2 p{
+    font-size: 11px;
+    font-weight: 350;
+}
+.info-part-2 h3{
+    font-size: 1rem;
+}
+.frete{
+    width: 25%;
+    padding: 15px 20px;
+    
+}
+
+.info-part-1 .suporte{
+    font-size: 3.4rem;
+}
+.info-part-1 .presente{
+    font-size: 3.8rem;
+}
+#presente{
+    width: 25%;
+    padding: 15px 20px;   
+}
+
+.destak-games{
+    width: 100%;
+    margin-top: 150px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    color: var(--text-color);
+}
+.destak-title{
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    
+}
+.destak-h3 h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.divider{
+    width: 45%;
+    height: 2px;
+    border-bottom: 2px solid #1a9e7a;
+    margin-top: 5px;
+}
+.destak-content{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+.destak-content p{
+    font-size: 14px;
+    color: #708090;
+}
+.divider2{
+    padding: 0 20px;
+    width: 100%;
+    height: 2px;
+    border-bottom: 3px solid #708090;
+    opacity: 30%;
+    margin-top: 5px;
+}
+.card-games{
+    width: 100%;
+    height: 1300px;
+    
+}
+.card-content{
+    display: flex;
+    gap: 5px;
+}
+.cardOne{
+    margin-top: 15px;
+    width: 50%;
+    height: 407px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: .5s;
+    background-color: var(--cor-de-fundo2);
+}
+
+.cardOne:hover{
+    transform: scale(1.05);
+}
+.card-banner-game{
+    
+    width: 100%;
+    height: 285px;
+    border-radius: 8px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.card-description h4{
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: 400;
+}
+.card-description p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.card-description i{
+    font-size: 14px;
+    color: var(--icone-color);
+}
+#gerald{
+    background-image: url('./assets/geraldao.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#Resident{
+    background-image: url('./assets/resident.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#eafc{
+    background-image: url('./assets/eafc.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#battlefield{
+    background-image: url('./assets/BF1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+#tekken{
+    background-image: url('./assets/tekken.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#mario{
+    background-image: url('./assets/mario.png');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.banner-promotion{
+    width: 100%;
+    height: 344px;
+    padding: 40px 20px;
+    
+}
+.promotion-content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.promotion-game1{
+    width: 100%;
+    height: 132px;
+    border-radius: 15px;
+    
+    padding: 15px;
+}
+
+#gameOne{
+    background-image: url('./assets/r6.png');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#gameTwo{
+    background-image: url('./assets/starfield.png');
+    background-position: 90% 50%;
+    background-size: cover;
+}
+.promotion-text-content h4{
+    font-size: 15px;
+    padding: 5px 0;
+    font-weight: 400;
+    color: #fff;
+}
+.promotion-text-content p{
+    font-size: 12px;
+    padding: 5px 0;
+    font-weight: 400;
+    color: #fff;
+}
+.promotion-text-content{
+    width: 50%;
+    height: 100%;
+    gap: 8px;
+}
+#button-green{
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #1a9e7a;
+    color: #f4f3f3;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#button-green:hover{
+    background-color: #f31c4a;
+}
+#button-orange{
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #f47a3e;
+    color: #f4f3f3;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+#divider-ultimos{
+    width: 30%;
+    border: 1px solid #f47a3e;
+}
+
+#halo{
+    background-image: url('./assets/halo-card.jpg');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#NFS{
+    background-image: url('./assets/NFS-card.jpg');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#GTA{
+    background-image: url('./assets/GTA-card.jpg');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#Starfield{
+    background-image: url('./assets/starfield-card.png');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#lastGames{
+    margin-top: 30px;
+}
+#bf-card{
+    background-image: url('./assets/BF-card.jpg');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+#hellblade{
+    background-image: url('./assets/hellblade-card.jpg');
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+.banner-resident{
+    width: 100%;
+    height: 525px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/leon.png');
+    background-size:cover;
+    background-position: 80% 20%;
+}
+.banner-resident-content{
+    width: 100%;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    color: #f4f3f3;
+    
+}
+.resident-title{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.resident-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+   
+}
+.resident-button button{
+  background-color: #f31c4a;
+  color: #fff;
+  padding: 4px 10px;  
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  width: 174px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .5s;
+}
+.resident-button button:hover{
+    background-color: transparent;
+    border: 1px solid #f4f3f3;
+}
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 380px;
+    background-color: #10181f;
+    color: #f4f3f3;
+    padding: 20px;
+}
+
+.footer-game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-title h1{
+    font-size: 2rem;
+    font-family: "Kode Mono", monospace;
+
+}
+.footer-text, .footer-local{
+    font-size: 14px;
+}
+.footer-title span{
+    color: #c94c4c;
+}
+.footer-socials{
+    width: 100%;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.footer-socials i{
+    cursor: pointer;
+    transition: .5s;
+}
+.footer-socials i:hover{
+    transform: scale(1.2);
+}
+.footer-local span{
+    color: #f4f3f3;
+    list-style-type: none;
+    list-style: none;
+}

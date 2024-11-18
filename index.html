@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameshop</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            GAME<span>SHOP</span>
+        </div>
+        <nav class="menu-reduzido">
+            <div class="header-menu" id="burguer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="header-login">
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="header-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="header-shop">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+            <div class="header-moon" id="lua" onclick="toggleMode()">
+               <button><i class="fa-regular fa-moon cor-lua"></i></button> 
+            </div>
+        </nav>
+       
+    </header>
+
+    <main>
+     <div class="banner-principal">
+     </div>
+     <div class="modal"></div>
+     <div class="banner-content">
+        <div class="banner-title">  
+            <h1>Assassin's Creed<i class="fa-regular fa-registered"></i> Valhalla </h1>
+            <p>
+                O movimento do Grande Exército Pagão na Inglaterra durante as expansões Vikings.
+            </p>
+        </div>
+        <div class="banner-button">
+            <button>Compre agora</button>
+        </div>
+     </div>
+    <section class="section-info">
+        <div class="info">
+            <div class="info-1 content">
+                <div class="info-part-1">
+                    <img src="./assets/devolucao-icon.png" alt="">
+                </div>
+                <div class="info-part-2">
+                    <h3>Devolução de dinheiro</h3>
+                    <p>
+                        Garantia de devolução em menos de 7 dias
+                    </p>
+                </div>
+            </div>
+           
+            <div class="info-2 content">
+                <div class="frete">
+                    <img src="./assets/frete-icon.png" alt="">
+                </div>
+                <div class="info-part-2">
+                    <h3>Frete grátis</h3>
+                    <p>
+                        Frete grátis para todos os pedidos
+                    </p>
+                </div>
+            </div>
+           
+            <div class="info-3 content">
+                <div class="info-part-1">
+                    <img src="./assets/suporte-icon.png" alt="">
+                </div>
+                <div class="info-part-2">
+                    <h3>Suporte on-line 24/7</h3>
+                    <p>
+                        Suporte online 24 horas
+                    </p>
+                </div>
+                
+            </div>
+
+
+            <div class="info-4 content">
+                <div class="info-part-1" id="presente">
+                   <img src="./assets/present-icon.png" alt="">
+                </div>
+                <div class="info-part-2">
+                    <h3>Desconto para Membros</h3>
+                    <p>
+                        Em todos os pedidos acima de R$120,00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destak-games">
+
+       <div class="destak-title">
+
+        <div class="destak-h3">
+            <h3>Jogos em Destaque</h3>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="destak-content">
+            <div>
+                <p>Xbox Séries S|X</p>
+            </div>
+            <div>
+                <p>PlayStation 5</p>
+            </div>
+            <div>
+                <p>Computador</p>
+            </div>
+        </div>
+
+       </div> 
+       <div class="divider2"></div>
+
+       <div class="card-games">
+
+            <div class="card-content">
+                <div class="cardOne">
+                    <div class="card-banner-game" id="gerald">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>The Witcher 3 Wild Hunt</h4>
+                        <p>R$240,00</p>
+                      <div> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div> 
+                    </div>
+                </div>
+                
+                <div class="cardOne">
+                    <div class="card-banner-game" id="Resident">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>Resident Evil 4</h4>
+                        <p>R$219,00</p>
+                        <div> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="cardOne">
+                    <div class="card-banner-game" id="eafc">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>EA FC25 Standard Edit.</h4>
+                        <p>R$240,00</p>
+                      <div> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div> 
+                    </div>
+                </div>
+                
+                <div class="cardOne">
+                    <div class="card-banner-game" id="battlefield">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>Battlefield 1 Standard</h4>
+                        <p>R$159,90</p>
+                        <div> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="cardOne">
+                    <div class="card-banner-game" id="tekken">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>Tekken 8 Gold Edition</h4>
+                        <p>R$240,00</p>
+                      <div> 
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div> 
+                    </div>
+                </div>
+                
+                <div class="cardOne">
+                    <div class="card-banner-game" id="mario">
+
+                    </div>
+                    <div class="card-description">
+                        <h4>Super Mário Bros</h4>
+                        <p>R$189,90</p>
+                        <div class="stars"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                          </div> 
+                    </div>
+                </div>
+            </div>
+
+       </div>
+
+    </section>
+
+    <section class="banner-promotion">
+        <div class="promotion-content">
+            <div class="promotion-game1" id="gameOne">
+                <div class="promotion-text-content">
+                    <div class="promotion-text">
+                        <h4>Rainbow Six Cerco</h4>
+                        <p>Lorem ipsum dolor si magnarnatur vel, earum </p>
+                    </div>
+                    <div class="promotion-button">
+                        <button id="button-orange">Comprar agora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion-game1" id="gameTwo">
+                <div class="promotion-text-content">
+                    <div class="promotion-text">
+                        <h4>Starfield Deluxe</h4>
+                        <p>Lorem ipsum dolor si magnarnatur vel, earum </p>
+                    </div>
+                    <div class="promotion-button">
+                        <button id="button-green"> Comprar agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destak-games" id="lastGames">
+
+        <div class="destak-title">
+ 
+         <div class="destak-h3">
+             <h3>Últimos Jogos</h3>
+         </div>
+ 
+         <div class="divider" id="divider-ultimos"></div>
+ 
+         <div class="destak-content">
+             <div>
+                 <p>Xbox Séries S|X</p>
+             </div>
+             <div>
+                 <p>PlayStation 5</p>
+             </div>
+             <div>
+                 <p>Computador</p>
+             </div>
+         </div>
+ 
+        </div> 
+        <div class="divider2"></div>
+ 
+        <div class="card-games">
+ 
+             <div class="card-content">
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="halo">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Halo 5 Guardians</h4>
+                         <p>R$349,00</p>
+                       <div> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                       </div> 
+                     </div>
+                 </div>
+                 
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="NFS">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Need For Speed Rivals</h4>
+                         <p>R$239,00</p>
+                         <div> 
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star-half-stroke"></i>
+                           </div> 
+                     </div>
+                 </div>
+             </div>
+             <div class="card-content">
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="GTA">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Grand Theft Auto Five</h4>
+                         <p>R$349,00</p>
+                       <div> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-regular fa-star"></i>
+                       </div> 
+                     </div>
+                 </div>
+                 
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="Starfield">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Starfield</h4>
+                         <p>R$259,90</p>
+                         <div> 
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                           </div> 
+                     </div>
+                 </div>
+             </div>
+             <div class="card-content">
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="bf-card">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Battlefield 2042</h4>
+                         <p>R$279,00</p>
+                       <div> 
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                         <i class="fa-solid fa-star"></i>
+                       </div> 
+                     </div>
+                 </div>
+                 
+                 <div class="cardOne">
+                     <div class="card-banner-game" id="hellblade">
+ 
+                     </div>
+                     <div class="card-description">
+                         <h4>Hellblade Senua's Sacrifice</h4>
+                         <p>R$289,90</p>
+                         <div class="stars"> 
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star"></i>
+                             <i class="fa-solid fa-star-half-stroke"></i>
+                           </div> 
+                     </div>
+                 </div>
+             </div>
+ 
+        </div>
+ 
+     </section>
+
+     <section class="banner-resident">
+        <div class="banner-resident-content">
+
+            <div class="resident-title">
+                <h1>Resident Evil 4 Remake</h1>
+            </div>
+            <div class="resident-text">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Expedita, exercitationem consectetur.
+                </p>
+            </div>
+
+            <div class="resident-button">
+                <button>Compre agora</button>
+            </div>
+
+        </div>
+     </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-game">
+            <div class="footer-title">
+                <h1>GAME<span>SHOP</span></h1>
+            </div>
+            <div class="footer-text">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deleniti harum totam dolores quasi excepturi eum perspiciatis.
+                </p>
+            </div>
+            <div class="footer-local">
+                <p>451 Wall Street, Reino Unido, Londres</p>
+                <p>Telefone: <span>031 983656164</span> </p>
+                <p>E-mail: gameshop@gmail.com</p>
+            </div>
+            <div class="footer-socials">
+                <div>
+                    <i class="fa-brands fa-whatsapp"></i> 
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/7740b33d31.js" crossorigin="anonymous"></script>
+    <script src="./script.js">
+
+    </script>
+</body>
+</html>
